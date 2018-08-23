@@ -1,8 +1,7 @@
-function app() {
-  const contents = document.createElement('h1');
-  contents.innerHTML = 'Hello webpack v4!';
+import $ from 'jQuery';
 
-  return contents;
-}
-
-document.body.appendChild(app());
+$(document).ready(function() {
+  console.log("ready!");
+  console.log($("#p").text());
+  console.log($("#text").val());
+});
